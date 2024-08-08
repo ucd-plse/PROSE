@@ -1,0 +1,18 @@
+Nodal attrs for bi_1997_v2.grd - 10/24/2013                                     
+         301
+           1
+primitive_weighting_in_continuity_equation                                      
+1                                                                               
+           1
+  0.300000000E-01
+primitive_weighting_in_continuity_equation                                      
+           9
+     27148    0.20000000E-01
+     27188    0.20000000E-01
+     27209    0.20000000E-01
+     27253    0.20000000E-01
+     27287    0.20000000E-01
+     27309    0.20000000E-01
+     27319    0.20000000E-01
+     27343    0.20000000E-01
+     27393    0.20000000E-01

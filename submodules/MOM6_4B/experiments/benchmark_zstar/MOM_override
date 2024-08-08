@@ -1,0 +1,99 @@
+! Blank file in which we can put "overrides" for parameters
+
+!!! coarsen x2 ---------------
+!!!#override NIGLOBAL =  180
+!!!#override NJGLOBAL =  90
+!!!#override DT = 3600.0
+!!!#override DT_THERM = 14400.0
+!! coarsen x3 ---------------
+!#override NIGLOBAL =  120
+!#override NJGLOBAL =  60
+!!#override DT = 2700.0
+!!#override DT_THERM = 10800.0
+!#override DT = 1800.0
+!#override DT_THERM = 7200.0
+!! coarsen x4 ---------------
+!!#override NIGLOBAL =  90
+!!#override NJGLOBAL =  40
+!!#override DT = 3600.0
+!!#override DT_THERM = 14400.0
+
+#override DAYMAX = 14
+#override ENERGYSAVEDAYS = 0.25
+
+!!!! Physics and Parameterizations
+#override USE_JACKSON_PARAM = False
+#override USE_VISBECK = False
+CHECK_DIFFUSIVE_CFL = True
+BULKMIXEDLAYER = False
+USE_CVMix_CONVECTION = True
+USE_KH_IN_MEKE = True
+USE_LATERAL_BOUNDARY_DIFFUSION = True
+MEKE_GEOMETRIC = True
+#override RESOLN_SCALED_KHTR = False
+BAROTROPIC_2018_ANSWERS = False
+PRESSURE_DEPENDENT_FRAZIL = True
+#override SMAGORINSKY_AH = False
+USE_NEUTRAL_DIFFUSION = True
+USE_REGRIDDING = True
+DEPTH_SCALED_KHTH = True
+INTERPOLATE_RES_FN = False
+USE_CVMIX_DDIFF = True
+RECONSTRUCT_FOR_PRESSURE = True
+SET_DIFF_2018_ANSWERS = False
+USE_KPP = True
+#override DIFFUSE_ML_TO_INTERIOR = False
+CHECK_BAD_SURFACE_VALS = True
+#override RECLAIM_FRAZIL = True
+KHTH_USE_FGNV_STREAMFUNCTION = True
+#override USE_STORED_SLOPES = True
+BBL_USE_EOS = True
+USE_LOTW_BBL_DIFFUSIVITY = True
+SIMPLE_TKE_TO_KD = True
+USE_NEUTRAL_DIFFUSION = True
+USE_MEKE = True
+USE_LMD94 = True
+USE_LEGACY_DIABATIC_DRIVER = False
+LAPLACIAN = True
+TRACER_ADVECTION_SCHEME = "PPM:H3"
+USE_PSURF_IN_EOS = True
+USE_LAND_MASK_FOR_HVISC = True
+MASS_WEIGHT_IN_PRESSURE_GRADIENT = True
+KHTH_USE_EBT_STRUCT = True
+#override NONLINEAR_BT_CONTINUITY = False
+REGRIDDING_COORDINATE_MODE = "Z*"
+OPTICS_2018_ANSWERS = False
+SURFACE_2018_ANSWERS = False
+REMAPPING_2018_ANSWERS = False
+VERT_FRICTION_2018_ANSWERS = False
+HOR_VISC_2018_ANSWERS = False
+DEFAULT_2018_ANSWERS = False
+KPP_IS_ADDITIVE = False
+KAPPA_SHEAR_ITER_BUG = False
+FIX_USTAR_GUSTLESS_BUG = True
+BBL_MIXING_AS_MAX = False
+MEKE_VISC_DRAG = False
+SET_VISC_2018_ANSWERS = False
+MEKE_GEOMETRIC_2018_ANSWERS = False
+REMAP_UV_USING_OLD_ALG = False
+REMAPPING_SCHEME = "PPM_H4"
+SMOOTH_RI = True
+LEITH_AH = True
+KPP%N_SMOOTH = 3
+KPP%MATCH_TECHNIQUE = "MatchGradient"
+!!NDIFF_INTERIOR_ONLY = True
+!!MEKE_EQUILIBRIUM_ALT = True
+!!#override DYNAMIC_VISCOUS_ML = False
+!!MEKE_MIN_LSCALE = True
+
+!!!! Parameters
+#override PRANDTL_TURB = 1.0
+#override DTBT_RESET_PERIOD = 7200.0
+KD_MAX = 0.1
+HMIX_FIXED = 0.5
+#override KHTH_MAX = 0.0
+#override KHTR = 0.0
+LEITH_BI_CONST = 128.0
+
+#override ETA_TOLERANCE = 1.0e-6
+ETA_TOLERANCE_AUX = 1.0e-6

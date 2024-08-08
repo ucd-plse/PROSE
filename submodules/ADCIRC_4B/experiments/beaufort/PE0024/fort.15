@@ -1,0 +1,205 @@
+ nc_newport_river_core_cr4_bath ! 30 CHARACTER ALPHANUM RUN DESCRIPTION         
+ v31.06 iterative          ! 20 CHARACTER ALPANUMERIC RUN IDENTIFICATION        
+ 1                         ! NFOVER - NONFATAL ERROR OVERRIDE OPTION            
+ 3                         ! NABOUT - ABREVIATED OUTPUT OPTION PARAMETER        
+ 0                         ! NSCREEN - UNIT 6 OUTPUT OPTION PARAMETER           
+ 0                         ! IHOT - HOT START PARAMETER                         
+ 2                         ! ICS - COORDINATE SYSTEM SELECTION PARAMETER        
+ 0                         ! IM - MODEL TYPE (0 INDICATES STANDARD DEPTH INTEGRA
+ 2                         ! NOLIBF - BOTTOM FRICTION TERM SELECTION PARAMETER  
+ 2                         ! NOLIFA - FINITE AMPLITUDE TERM SELECTION PARAMETER 
+ 1                         ! NOLICA - SPATIAL DERIVATIVE PORTION OF CONV. TERM S
+ 1                         ! NOLICAT - TIME DERIVATIVE PORTION OF CONVECTIVE TER
+ 1                         ! NWP - VARIABLE BOTTOM FRICTION AND LATERAL VISCOSIT
+primitive_weighting_in_continuity_equation                                      
+ 1                         ! NCOR - VARIABLE CORIOLIS IN SPACE OPTION PARAMETER 
+ 0                         ! NTIP - TIDAL POTENTIAL OPTION PARAMETER            
+ 0                         ! NWS - WIND STRESS AND BAROMETRIC PRESSURE OPTION PA
+ 1                         ! NRAMP - RAMP FUNCTION OPTION                       
+ 9.81                      ! G - ACCELERATION DUE TO GRAVITY - DETERMINES UNITS 
+ 0.002                     ! TAU0 - WEIGHTING FACTOR IN GWCE                    
+ 5.0                       ! DT - TIME STEP (IN SECONDS)                        
+ 0.0                       ! STATIM - STARTING TIME (IN DAYS)                   
+ 0.0                       ! REFTIM - REFERENCE TIME (IN DAYS)                  
+ 40.0                      ! RNDAY - TOTAL LENGTH OF SIMULATION (IN DAYS)       
+ 2.                        ! DRAMP - DURATION OF RAMP FUNCTION (IN DAYS)        
+ 0.35 0.30 0.35            ! TIME WEIGHTING FACTORS FOR THE GWCE EQUATION       
+ 0.02  10  10  0.02        ! H0 - MINIMUM CUTOFF DEPTH                          
+ -76.0 33.0                ! SLAM0,SFEA0 - CENTER OF CPP PROJECTION IN DEGREES L
+ 0.0025 1.0 10. 0.3333     ! FFACTOR - BOTTOM FRICTION COEFFICIENT              
+ 2.0                       ! ESL - LATERAL EDDY VISCOSITY COEFFICIENT; IGNORED I
+ 0.0                       ! CORI - CORIOLIS PARAMETER - IGNORED IF NCOR = 1    
+ 0                         ! NUMBER OF TIDAL POTENTIAL CONSTITUENTS BEING FORCED
+ 5                         ! NBFR - TOTAL NUMBER OF FORCING FREQUENCIES ON OPEN 
+ K1                        ! ALPHANUMERIC DESCRIPTION OF OPEN BOUNDARY FORCING D
+ 0.000072921158358   1.000  0.000                                               
+ O1                                                                             
+ 0.000067597744151   1.000  0.000                                               
+ M2                                                                             
+ 0.000140518902509   1.000  0.000                                               
+ N2                                                                             
+ 0.000137879699487   1.000  0.000                                               
+ S2                                                                             
+ 0.000145444104333   1.000  0.000                                               
+ K1                                                                             
+      .0871   179.12    3341  0                                                 
+      .0872   178.94    3977  0                                                 
+      .0873   178.77    5134  0                                                 
+      .0874   178.57   18880  0                                                 
+      .0876   178.37   23049  0                                                 
+      .0877   178.22   24189  0                                                 
+      .0878   178.02   25576  0                                                 
+      .0879   177.84   26972  0                                                 
+      .0881   177.68   27622  0                                                 
+      .0882   177.54   28250  0                                                 
+      .0883   177.37   28741  0                                                 
+      .0884   177.17   29144  0                                                 
+      .0886   176.95   29866  0                                                 
+      .0887   176.80   30267  0                                                 
+      .0889   176.61   30870  0                                                 
+      .0890   176.46   31251  0                                                 
+      .0891   176.30   31437  0                                                 
+      .0893   176.13   31644  0                                                 
+      .0894   176.00   31783  0                                                 
+      .0894   175.90   31909  0                                                 
+      .0895   175.81   32016  0                                                 
+      .0897   175.60   32192  0                                                 
+      .0901   175.67   32210  0                                                 
+      .0905   175.75   32214  0                                                 
+      .0909   175.82   32216  0                                                 
+      .0913   175.90   32215  0                                                 
+      .0918   175.99   32225  0                                                 
+      .0920   176.04   32218  0                                                 
+      .0923   176.11   32220  0                                                 
+ O1                                                                             
+      .0648   191.72    3341  0                                                 
+      .0648   191.54    3977  0                                                 
+      .0648   191.37    5134  0                                                 
+      .0649   191.17   18880  0                                                 
+      .0650   190.97   23049  0                                                 
+      .0650   190.82   24189  0                                                 
+      .0650   190.62   25576  0                                                 
+      .0651   190.44   26972  0                                                 
+      .0651   190.28   27622  0                                                 
+      .0652   190.14   28250  0                                                 
+      .0652   189.97   28741  0                                                 
+      .0652   189.77   29144  0                                                 
+      .0653   189.55   29866  0                                                 
+      .0653   189.40   30267  0                                                 
+      .0654   189.21   30870  0                                                 
+      .0654   189.06   31251  0                                                 
+      .0655   188.91   31437  0                                                 
+      .0655   188.73   31644  0                                                 
+      .0656   188.60   31783  0                                                 
+      .0656   188.50   31909  0                                                 
+      .0656   188.41   32016  0                                                 
+      .0657   188.20   32192  0                                                 
+      .0660   188.24   32210  0                                                 
+      .0662   188.28   32214  0                                                 
+      .0664   188.30   32216  0                                                 
+      .0667   188.30   32215  0                                                 
+      .0670   188.30   32225  0                                                 
+      .0671   188.30   32218  0                                                 
+      .0673   188.30   32220  0                                                 
+ M2                                                                             
+      .4195   353.16    3341  0                                                 
+      .4201   353.03    3977  0                                                 
+      .4206   352.92    5134  0                                                 
+      .4212   352.81   18880  0                                                 
+      .4218   352.69   23049  0                                                 
+      .4222   352.61   24189  0                                                 
+      .4229   352.50   25576  0                                                 
+      .4235   352.40   26972  0                                                 
+      .4240   352.30   27622  0                                                 
+      .4245   352.22   28250  0                                                 
+      .4250   352.11   28741  0                                                 
+      .4257   351.96   29144  0                                                 
+      .4264   351.81   29866  0                                                 
+      .4269   351.70   30267  0                                                 
+      .4276   351.57   30870  0                                                 
+      .4283   351.47   31251  0                                                 
+      .4289   351.37   31437  0                                                 
+      .4296   351.25   31644  0                                                 
+      .4301   351.17   31783  0                                                 
+      .4305   351.10   31909  0                                                 
+      .4309   351.04   32016  0                                                 
+      .4317   350.90   32192  0                                                 
+      .4324   350.86   32210  0                                                 
+      .4331   350.83   32214  0                                                 
+      .4337   350.79   32216  0                                                 
+      .4346   350.75   32215  0                                                 
+      .4356   350.70   32225  0                                                 
+      .4366   350.70   32218  0                                                 
+      .4380   350.70   32220  0                                                 
+ N2                                                                             
+      .0979   338.19    3341  0                                                 
+      .0981   338.12    3977  0                                                 
+      .0982   338.04    5134  0                                                 
+      .0984   337.96   18880  0                                                 
+      .0986   337.87   23049  0                                                 
+      .0988   337.81   24189  0                                                 
+      .0990   337.72   25576  0                                                 
+      .0992   337.65   26972  0                                                 
+      .0994   337.58   27622  0                                                 
+      .0996   337.52   28250  0                                                 
+      .0997   337.44   28741  0                                                 
+      .1000   337.36   29144  0                                                 
+      .1002   337.26   29866  0                                                 
+      .1004   337.20   30267  0                                                 
+      .1006   337.14   30870  0                                                 
+      .1009   337.09   31251  0                                                 
+      .1011   337.03   31437  0                                                 
+      .1013   336.96   31644  0                                                 
+      .1015   336.90   31783  0                                                 
+      .1016   336.85   31909  0                                                 
+      .1017   336.81   32016  0                                                 
+      .1020   336.70   32192  0                                                 
+      .1021   336.74   32210  0                                                 
+      .1023   336.78   32214  0                                                 
+      .1024   336.80   32216  0                                                 
+      .1026   336.80   32215  0                                                 
+      .1028   336.80   32225  0                                                 
+      .1030   336.84   32218  0                                                 
+      .1033   336.91   32220  0                                                 
+ S2                                                                             
+      .0774    15.19    3341  0                                                 
+      .0777    15.12    3977  0                                                 
+      .0779    15.06    5134  0                                                 
+      .0781    15.00   18880  0                                                 
+      .0784    14.95   23049  0                                                 
+      .0786    14.91   24189  0                                                 
+      .0789    14.85   25576  0                                                 
+      .0791    14.80   26972  0                                                 
+      .0793    14.75   27622  0                                                 
+      .0795    14.71   28250  0                                                 
+      .0798    14.68   28741  0                                                 
+      .0801    14.65   29144  0                                                 
+      .0804    14.62   29866  0                                                 
+      .0806    14.60   30267  0                                                 
+      .0809    14.54   30870  0                                                 
+      .0812    14.49   31251  0                                                 
+      .0815    14.44   31437  0                                                 
+      .0818    14.39   31644  0                                                 
+      .0821    14.37   31783  0                                                 
+      .0823    14.35   31909  0                                                 
+      .0824    14.33   32016  0                                                 
+      .0828    14.30   32192  0                                                 
+      .0826    14.26   32210  0                                                 
+      .0824    14.23   32214  0                                                 
+      .0823    14.21   32216  0                                                 
+      .0821    14.25   32215  0                                                 
+      .0819    14.29   32225  0                                                 
+      .0819    14.41   32218  0                                                 
+      .0819    14.61   32220  0                                                 
+100.0                      ! ANGINN : INNER ANGLE THRESHOLD                     
+           0   4.0000000000000000        35.000000000000000              120
+       0                          ! TOTAL NUMBER OF ELEVATION RECORDING STATIONS
+           0   4.0000000000000000        35.000000000000000              120
+       0                          ! TOTAL NUMBER OF VELOCITY RECORDING STATIONS 
+           1   4.0000000000000000        35.000000000000000            12000
+           1   4.0000000000000000        35.000000000000000            12000
+ 0                                     ! NHARF - NUMBER OF FREQENCIES IN HARMONI
+ 10.0  40.0  360  0.0000000 ! THAS, THAF, NHAINC,FMV                            
+ 0 0 1 1                    ! NHASE,NHASV,NHAGE,NHAGV                           
+ 1  8640                    ! NHSTAR,NHSINC                                     
+ 1  0  1e-5  25             ! ITITER,ISLDIA,CONVCR,ITMAX                        

@@ -1,0 +1,140 @@
+ nc_newport_river_core_cr4_bath ! 30 CHARACTER ALPHANUM RUN DESCRIPTION         
+ v31.06 iterative          ! 20 CHARACTER ALPANUMERIC RUN IDENTIFICATION        
+ 1                         ! NFOVER - NONFATAL ERROR OVERRIDE OPTION            
+ 3                         ! NABOUT - ABREVIATED OUTPUT OPTION PARAMETER        
+ 0                         ! NSCREEN - UNIT 6 OUTPUT OPTION PARAMETER           
+ 0                         ! IHOT - HOT START PARAMETER                         
+ 2                         ! ICS - COORDINATE SYSTEM SELECTION PARAMETER        
+ 0                         ! IM - MODEL TYPE (0 INDICATES STANDARD DEPTH INTEGRA
+ 2                         ! NOLIBF - BOTTOM FRICTION TERM SELECTION PARAMETER  
+ 2                         ! NOLIFA - FINITE AMPLITUDE TERM SELECTION PARAMETER 
+ 1                         ! NOLICA - SPATIAL DERIVATIVE PORTION OF CONV. TERM S
+ 1                         ! NOLICAT - TIME DERIVATIVE PORTION OF CONVECTIVE TER
+ 1                         ! NWP - VARIABLE BOTTOM FRICTION AND LATERAL VISCOSIT
+primitive_weighting_in_continuity_equation                                      
+ 1                         ! NCOR - VARIABLE CORIOLIS IN SPACE OPTION PARAMETER 
+ 0                         ! NTIP - TIDAL POTENTIAL OPTION PARAMETER            
+ 0                         ! NWS - WIND STRESS AND BAROMETRIC PRESSURE OPTION PA
+ 1                         ! NRAMP - RAMP FUNCTION OPTION                       
+ 9.81                      ! G - ACCELERATION DUE TO GRAVITY - DETERMINES UNITS 
+ 0.002                     ! TAU0 - WEIGHTING FACTOR IN GWCE                    
+ 5.0                       ! DT - TIME STEP (IN SECONDS)                        
+ 0.0                       ! STATIM - STARTING TIME (IN DAYS)                   
+ 0.0                       ! REFTIM - REFERENCE TIME (IN DAYS)                  
+ 40.0                      ! RNDAY - TOTAL LENGTH OF SIMULATION (IN DAYS)       
+ 2.                        ! DRAMP - DURATION OF RAMP FUNCTION (IN DAYS)        
+ 0.35 0.30 0.35            ! TIME WEIGHTING FACTORS FOR THE GWCE EQUATION       
+ 0.02  10  10  0.02        ! H0 - MINIMUM CUTOFF DEPTH                          
+ -76.0 33.0                ! SLAM0,SFEA0 - CENTER OF CPP PROJECTION IN DEGREES L
+ 0.0025 1.0 10. 0.3333     ! FFACTOR - BOTTOM FRICTION COEFFICIENT              
+ 2.0                       ! ESL - LATERAL EDDY VISCOSITY COEFFICIENT; IGNORED I
+ 0.0                       ! CORI - CORIOLIS PARAMETER - IGNORED IF NCOR = 1    
+ 0                         ! NUMBER OF TIDAL POTENTIAL CONSTITUENTS BEING FORCED
+ 5                         ! NBFR - TOTAL NUMBER OF FORCING FREQUENCIES ON OPEN 
+ K1                        ! ALPHANUMERIC DESCRIPTION OF OPEN BOUNDARY FORCING D
+ 0.000072921158358   1.000  0.000                                               
+ O1                                                                             
+ 0.000067597744151   1.000  0.000                                               
+ M2                                                                             
+ 0.000140518902509   1.000  0.000                                               
+ N2                                                                             
+ 0.000137879699487   1.000  0.000                                               
+ S2                                                                             
+ 0.000145444104333   1.000  0.000                                               
+ K1                                                                             
+      .0923   176.68   32195  0                                                 
+      .0920   177.01   32224  0                                                 
+      .0918   177.24   32219  0                                                 
+      .0916   177.43   32193  0                                                 
+      .0915   177.61   32207  0                                                 
+      .0913   177.85   32204  0                                                 
+      .0911   178.13   32223  0                                                 
+      .0910   178.38   32221  0                                                 
+      .0908   178.74   32208  0                                                 
+      .0906   179.09   32213  0                                                 
+      .0904   179.44   32211  0                                                 
+      .0902   179.79   32209  0                                                 
+      .0900   180.14   32205  0                                                 
+      .0898   180.50   32203  0                                                 
+      .0898   180.50   32203  0                                                 
+      .0898   180.50   32203  0                                                 
+ O1                                                                             
+      .0676   188.85   32195  0                                                 
+      .0676   189.22   32224  0                                                 
+      .0676   189.48   32219  0                                                 
+      .0676   189.69   32193  0                                                 
+      .0676   189.89   32207  0                                                 
+      .0677   190.14   32204  0                                                 
+      .0678   190.39   32223  0                                                 
+      .0680   190.62   32221  0                                                 
+      .0682   190.95   32208  0                                                 
+      .0684   191.26   32213  0                                                 
+      .0686   191.58   32211  0                                                 
+      .0688   191.89   32209  0                                                 
+      .0690   192.19   32205  0                                                 
+      .0692   192.50   32203  0                                                 
+      .0692   192.50   32203  0                                                 
+      .0692   192.50   32203  0                                                 
+ M2                                                                             
+      .4580   351.58   32195  0                                                 
+      .4701   352.13   32224  0                                                 
+      .4785   352.50   32219  0                                                 
+      .4854   352.79   32193  0                                                 
+      .4921   353.06   32207  0                                                 
+      .4997   353.40   32204  0                                                 
+      .5075   353.76   32223  0                                                 
+      .5144   354.07   32221  0                                                 
+      .5244   354.51   32208  0                                                 
+      .5340   354.92   32213  0                                                 
+      .5437   355.31   32211  0                                                 
+      .5535   355.68   32209  0                                                 
+      .5632   356.05   32205  0                                                 
+      .5730   356.40   32203  0                                                 
+      .5730   356.40   32203  0                                                 
+      .5730   356.40   32203  0                                                 
+ N2                                                                             
+      .1075   338.08   32195  0                                                 
+      .1100   338.76   32224  0                                                 
+      .1118   339.22   32219  0                                                 
+      .1133   339.59   32193  0                                                 
+      .1147   339.93   32207  0                                                 
+      .1163   340.36   32204  0                                                 
+      .1179   340.83   32223  0                                                 
+      .1194   341.24   32221  0                                                 
+      .1214   341.81   32208  0                                                 
+      .1235   342.34   32213  0                                                 
+      .1255   342.85   32211  0                                                 
+      .1276   343.35   32209  0                                                 
+      .1296   343.83   32205  0                                                 
+      .1317   344.30   32203  0                                                 
+      .1317   344.30   32203  0                                                 
+      .1317   344.30   32203  0                                                 
+ S2                                                                             
+      .0861    18.12   32195  0                                                 
+      .0890    20.12   32224  0                                                 
+      .0910    21.43   32219  0                                                 
+      .0927    22.47   32193  0                                                 
+      .0944    23.42   32207  0                                                 
+      .0965    24.60   32204  0                                                 
+      .0986    25.85   32223  0                                                 
+      .1006    26.91   32221  0                                                 
+      .1034    28.38   32208  0                                                 
+      .1063    29.71   32213  0                                                 
+      .1091    30.98   32211  0                                                 
+      .1121    32.18   32209  0                                                 
+      .1151    33.32   32205  0                                                 
+      .1181    34.40   32203  0                                                 
+      .1181    34.40   32203  0                                                 
+      .1181    34.40   32203  0                                                 
+100.0                      ! ANGINN : INNER ANGLE THRESHOLD                     
+           0   4.0000000000000000        35.000000000000000              120
+       0                          ! TOTAL NUMBER OF ELEVATION RECORDING STATIONS
+           0   4.0000000000000000        35.000000000000000              120
+       0                          ! TOTAL NUMBER OF VELOCITY RECORDING STATIONS 
+           1   4.0000000000000000        35.000000000000000            12000
+           1   4.0000000000000000        35.000000000000000            12000
+ 0                                     ! NHARF - NUMBER OF FREQENCIES IN HARMONI
+ 10.0  40.0  360  0.0000000 ! THAS, THAF, NHAINC,FMV                            
+ 0 0 1 1                    ! NHASE,NHASV,NHAGE,NHAGV                           
+ 1  8640                    ! NHSTAR,NHSINC                                     
+ 1  0  1e-5  25             ! ITITER,ISLDIA,CONVCR,ITMAX                        
